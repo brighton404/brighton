@@ -2,8 +2,8 @@
     position: absolute;
     width: 5vw;
     height: 5vh;
-    bottom: 2vh;
-    left: 2vh;
+    bottom: 5vh;
+    left: 5vh;
     background: url('/public/icons/logo.png') 50% / contain no-repeat;
 }
 .background {
@@ -78,11 +78,19 @@ section div:nth-child(2) .container:nth-child(2) {
     align-self: stretch;
 }
 @media only screen and (max-width: 680px) {
+    .logo {
+        width: 8vw;
+        height: 8vh;
+    }
     section div:nth-child(2) {
         flex-direction: column;
     }
 }
 @media only screen and (max-width: 480px) {
+    .logo {
+        width: 12vw;
+        height: 12vh;
+    }
     .background {
         background: url('/public/images/gradient.png') 20% / cover no-repeat; 
     }
