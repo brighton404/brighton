@@ -77,6 +77,9 @@ section div:nth-child(2) .container:nth-child(2) {
     flex: 1 0 0;
     align-self: stretch;
 }
+section div:nth-child(2) .container:nth-child(2) h1 {
+    text-align: right;
+}
 @media only screen and (max-width: 680px) {
     .logo {
         width: 8vw;
