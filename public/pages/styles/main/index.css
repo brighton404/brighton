@@ -87,6 +87,9 @@ section div:nth-child(2) .container:nth-child(2) {
     }
 }
 @media only screen and (max-width: 480px) {
+    body {
+        height: 95vh;
+    }
     body section{
         padding: 10px;
         flex: 1 0 0;
