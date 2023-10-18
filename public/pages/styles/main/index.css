@@ -13,7 +13,21 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/public/images/gradient.png') 50% / cover no-repeat; 
+    background: linear-gradient(225deg, #dfdfdf, #c698c8, #420345, #420345);
+    background-size: 800% 800%;
+
+    -webkit-animation: mixmatch 16s ease infinite;
+    animation: mixmatch 16s ease infinite;
+}
+@-webkit-keyframes mixmatch {
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
+}
+@keyframes mixmatch {
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
 }
 body section{
     padding: 40px;
@@ -31,6 +45,7 @@ section div h1 {
     font-size: clamp(3rem, 5vw, 5rem);
     font-weight: 400;
     text-transform: uppercase;
+    mix-blend-mode: difference;
 }
 section div p, a {
     color: var(--theme-text-primary);
@@ -38,11 +53,13 @@ section div p, a {
     font-weight: 200;
     text-transform: lowercase;
     text-decoration: none;
+    mix-blend-mode: difference;
 }
 section div a:hover {
     text-decoration: underline;
 }
 section div li {
+    mix-blend-mode: difference;
     list-style: none;
     flex-direction: column;
     align-items: end;
