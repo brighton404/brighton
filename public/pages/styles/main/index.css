@@ -94,7 +94,9 @@ section div:nth-child(2) .container:nth-child(2) {
     }
     .logo {
         width: 12vw;
-        height: 12vh;
+        height: 3vh;
+        bottom: 8vh;
+        left: 6vw;
     }
     .background {
         background: url('/public/images/gradient.png') 20% / cover no-repeat; 
