@@ -9,7 +9,6 @@ function loadContent() {
         })
         .catch(error => console.error('Error:', error));
 }
-
 // alternate function call for another button in the second page
 document.addEventListener('DOMContentLoaded', function () {
     const loadContentButton = document.getElementById('load-content');

@@ -47,15 +47,20 @@ body #home{
     text-transform: uppercase;
     mix-blend-mode: difference;
 }
-#home div p, a {
+#home div p, a, button{
     color: var(--theme-text-primary);
     font-size: clamp(1.2rem, 2vw, 1.8rem);
     font-weight: 200;
     text-transform: lowercase;
     text-decoration: none;
     mix-blend-mode: difference;
+    border: none;
+    background-color: transparent;
 }
 #home div a:hover {
+    text-decoration: underline;
+}
+#home div button:hover {
     text-decoration: underline;
 }
 #home div li {
