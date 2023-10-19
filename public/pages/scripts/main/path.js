@@ -1,15 +1,25 @@
-//auto load the home page
-function loadContent() {
-    const home = document.getElementById('home');
+//This serves as a dynamic link for filling content into the index page [brings in html content of different files and injects into the index.html]
 
-    fetch('/public/pages/html/home.html')
+//auto load the home page
+let pagevisible = true;
+function loadContent() {
+    const env = document.getElementById('env');
+    const home = document.getElementById('home');
+    
+    if (pagevisible) {
+        env.style.display = 'none';   
+        fetch('/public/pages/html/home.html')
         .then(response => response.text())
         .then(data => {
             home.innerHTML = data;
         })
         .catch(error => console.error('Error:', error));
+    } else { 
+        env.style.display = 'block';   
+        home.style.display = 'none';   
+    }
 }
-// alternate function call for another button in the second page
+/* alternate function call for another button in the second page
 document.addEventListener('DOMContentLoaded', function () {
     const loadContentButton = document.getElementById('load-content');
 
@@ -17,17 +27,23 @@ document.addEventListener('DOMContentLoaded', function () {
         loadContent();
     });
 });
+*/
 //loads the environment page
-document.addEventListener('DOMContentLoaded', function () {
-    const targetSection = document.getElementById('env');
-    const loadContentButton = document.getElementById('load-content');
+function loadenv() {
+    const home = document.getElementById('home');
+    const env = document.getElementById('env');
 
-    loadContentButton.addEventListener('click', function () {
-        fetch('external-content.html')
+    if (pagevisible) {
+        env.style.display = 'block';  
+        home.style.display = 'none';
+        fetch('/public/pages/html/Env.html')
             .then(response => response.text())
             .then(data => {
-                targetSection.innerHTML = data;
+                env.innerHTML = data;
             })
             .catch(error => console.error('Error:', error));
-    });
-});
+    } else {
+        env.style.display = 'none';
+        home.style.display = 'block';
+    }
+};

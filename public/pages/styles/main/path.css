@@ -18,7 +18,9 @@ head {
     --theme-body-primary: #1A1D21;--theme-body-secondary:#f0f0f0;
 
     --theme-text-primary: #FFF;--theme-text-secondary: #000;
-    --theme-text-third: #383E47;--theme-text-fourth: #989898;--theme-divs-primary: #383E47;--theme-divs-secondary: #1A1D21;
+    --theme-text-third: #383E47;--theme-text-fourth: #989898;
+
+    --theme-divs-primary: #383E47;--theme-divs-secondary: #1A1D21;
 }
 
 body {
@@ -27,7 +29,7 @@ body {
     overflow: hidden;
     height: 100vh;
 }
-h1,p,a {
+#home h1,p,a {
     mix-blend-mode: difference;
     font-family: Inter;
 }
