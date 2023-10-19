@@ -2,6 +2,9 @@
 head {
     display: none;
  }
+ script {
+    display: none;
+ }
 * {
     /*global vallues stay the same until specified on their defined css files*/
     display: flex; margin: 0px; padding: 0px; gap: 0px; 
