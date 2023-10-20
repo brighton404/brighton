@@ -33,6 +33,3 @@ Thank you for visiting, and I hope you enjoy your journey through my portfolio!
 
 Sincerely,
 [Julius Brighton]
-
-[brighton@lunahealth.co]
-[0778526016]
