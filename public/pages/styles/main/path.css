@@ -1,35 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
-head {
-    display: none;
- }
- script {
-    display: none;
- }
-* {
-    /*global vallues stay the same until specified on their defined css files*/
+head {display: none;}
+ script {display: none;}
+* {/*global vallues stay the same until specified on their defined css files*/
     display: flex; margin: 0px; padding: 0px; gap: 0px; 
-
     font-family: 'Inter', sans-serif; font-weight: 300;
     max-width: 100vw;
 }
-
-:root {
-        /*Global color scheme*/
+:root { /*Global color scheme*/
     --theme-body-primary: #1A1D21;--theme-body-secondary:#f0f0f0;
-
     --theme-text-primary: #FFF;--theme-text-secondary: #000;
     --theme-text-third: #383E47;--theme-text-fourth: #989898;
-
     --theme-divs-primary: #383E47;--theme-divs-secondary: #1A1D21;
 }
-
 body {
     background-color: var(--theme-body-primary);
     display: flex;
     overflow: hidden;
     height: 100vh;
 }
-#home h1,p,a {
+#home { overflow-y: scroll; scroll-snap-type: y mandatory; background: #1E1F23; }
+#theme1 h1,p,a {
     mix-blend-mode: difference;
     font-family: Inter;
 }

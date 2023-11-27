@@ -5,8 +5,10 @@ let pagevisible = true;
 function loadContent() {
     const env = document.getElementById('env');
     const home = document.getElementById('home');
+    const theme1 = document.getElementById('theme1');
     
     if (pagevisible) {
+        theme1.style.display = 'none';
         env.style.display = 'none';   
         fetch('/public/pages/html/home.html')
         .then(response => response.text())
@@ -16,7 +18,8 @@ function loadContent() {
         .catch(error => console.error('Error:', error));
     } else { 
         env.style.display = 'block';   
-        home.style.display = 'none';   
+        home.style.display = 'none'; 
+        theme1.style.display = 'none';  
     }
 }
 /* alternate function call for another button in the second page
@@ -32,8 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
 function loadenv() {
     const home = document.getElementById('home');
     const env = document.getElementById('env');
+    const theme1 = document.getElementById('theme1');
 
     if (pagevisible) {
+        theme1.style.display = 'none';
         env.style.display = 'block';  
         home.style.display = 'none';
         fetch('/public/pages/html/Env.html')
@@ -45,5 +50,6 @@ function loadenv() {
     } else {
         env.style.display = 'none';
         home.style.display = 'block';
+        theme1.style.display = 'none';
     }
 };

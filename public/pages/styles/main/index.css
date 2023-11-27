@@ -1,4 +1,4 @@
-#home .logo {
+#theme1 .logo {
     position: absolute;
     width: 5vw;
     height: 5vh;
@@ -6,7 +6,7 @@
     left: 5vh;
     background: url('/public/icons/logo.png') 50% / contain no-repeat;
 }
-#home .background {
+#theme1 .background {
     z-index: -1;
     position: absolute;
     top: 0;
@@ -29,25 +29,25 @@
     50%{background-position:100% 79%}
     100%{background-position:0% 22%}
 }
-body #home{
+body #theme1{
     padding: 40px;
     flex: 1 0 0;
     flex-direction: column;
 }
-#home div:nth-child(1), 
-#home div:nth-child(2) {
+#theme1 div:nth-child(1), 
+#theme1 div:nth-child(2) {
     align-items: flex-start;
     align-self: stretch;
     flex: 1 0 0;
 }
-#home div h1 {
+#theme1 div h1 {
     color: var(--theme-text-primary);
     font-size: clamp(3rem, 5vw, 5rem);
     font-weight: 400;
     text-transform: uppercase;
     mix-blend-mode: difference;
 }
-#home div p, a, button{
+#theme1 div p, a, button{
     color: var(--theme-text-primary);
     font-size: clamp(1.2rem, 2vw, 1.8rem);
     font-weight: 200;
@@ -57,26 +57,26 @@ body #home{
     border: none;
     background-color: transparent;
 }
-#home div a:hover {
+#theme1 div a:hover {
     text-decoration: underline;
 }
-#home div button:hover {
+#theme1 div button:hover {
     text-decoration: underline;
 }
-#home div li {
+#theme1 div li {
     mix-blend-mode: difference;
     list-style: none;
     flex-direction: column;
     align-items: end;
 }
 /*[top bar]*/
-#home div:nth-child(1) .container:nth-child(1) {
+#theme1 div:nth-child(1) .container:nth-child(1) {
     padding: 10px;
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
 }
-#home div:nth-child(1) .container:nth-child(2) {
+#theme1 div:nth-child(1) .container:nth-child(2) {
     flex-direction: column;
     align-items: flex-end;
     gap: 20px;
@@ -84,30 +84,30 @@ body #home{
     align-self: stretch;
 }
 /*[bottom bar]*/
-#home div:nth-child(2) .container:nth-child(1) {
+#theme1 div:nth-child(2) .container:nth-child(1) {
     flex: 1 0 0;
 }
-#home div:nth-child(2) .container:nth-child(1) .wrap{
+#theme1 div:nth-child(2) .container:nth-child(1) .wrap{
     flex-direction: column;
     align-items: flex-start;
     flex: 1 0 0;
     align-self: stretch;
 }
-#home div:nth-child(2) .container:nth-child(2) {
+#theme1 div:nth-child(2) .container:nth-child(2) {
     justify-content: flex-end;
     align-items: flex-end;
     flex: 1 0 0;
     align-self: stretch;
 }
-#home div:nth-child(2) .container:nth-child(2) h1 {
+#theme1 div:nth-child(2) .container:nth-child(2) h1 {
     text-align: right;
 }
 @media only screen and (max-width: 680px) {
-    #home .logo {
+    #theme1 .logo {
         width: 8vw;
         height: 8vh;
     }
-    #home div:nth-child(2) {
+    #theme1 div:nth-child(2) {
         flex-direction: column;
     }
 }
@@ -115,25 +115,25 @@ body #home{
     body {
         max-height: 95vh;
     }
-    body #home{
+    body #theme1{
         padding: 10px 30px;
         flex: 1 0 0;
         flex-direction: column;
     }
-    #home .logo {
+    #theme1 .logo {
         width: 12vw;
         height: 3vh;
         bottom: 8vh;
         left: 6vw;
     }
-    #home .background {
+    #theme1 .background {
         background: url('/public/images/gradient.png') 20% / cover no-repeat; 
     }
-    #home div:nth-child(1) {
+    #theme1 div:nth-child(1) {
         flex-direction: column;
     }
     /*[bottom bar]*/
-    #home div:nth-child(2) .container:nth-child(1) .wrap {
+    #theme1 div:nth-child(2) .container:nth-child(1) .wrap {
         flex-direction: row;
         align-items: flex-end;
     }
@@ -144,4 +144,11 @@ body #env{
     padding: 20px;
     align-items: flex-start;
     gap: 10px;
+}
+body #home{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #1E1F23;
 }
