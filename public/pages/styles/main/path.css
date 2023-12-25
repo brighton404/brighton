@@ -17,9 +17,27 @@ body {
     display: flex;
     overflow: hidden;
     height: 100vh;
+    scroll-behavior: smooth;    
 }
-#home { overflow-y: scroll; scroll-snap-type: y mandatory; background: #1E1F23; }
+#home { overflow-y: scroll; scroll-snap-type: y proximity; background: #1E1F23; }
 #theme1 h1,p,a {
     mix-blend-mode: difference;
     font-family: Inter;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+background: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+background: #888;
+border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #555;
 }
