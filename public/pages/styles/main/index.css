@@ -47,7 +47,7 @@ body #theme1{
     text-transform: uppercase;
     mix-blend-mode: difference;
 }
-#theme1 div p, a, button{
+#theme1 div p, #theme1 a, button{
     color: var(--theme-text-primary);
     font-size: clamp(1.2rem, 2vw, 1.8rem);
     font-weight: 200;

@@ -20,6 +20,7 @@ body {
     scroll-behavior: smooth;    
 }
 #home { overflow-y: scroll; scroll-snap-type: y proximity; background: #1E1F23; }
+#about { overflow-y: scroll; scroll-snap-type: y proximity; background: #1E1F23; }
 #theme1 h1,p,a {
     mix-blend-mode: difference;
     font-family: Inter;
@@ -27,7 +28,6 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
 }
-
 
 ::-webkit-scrollbar-track {
 background: #ffffff00;
