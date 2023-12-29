@@ -1,24 +1,24 @@
 <main style="margin: 0px;">
     <div class="homePage" id="homepage" style="gap: 20px; flex-direction: column; padding: 0px; background-color: #1e1f23;">
-        <div class="hero" style="gap: 25px; flex-direction: column; height: 40vh; align-items: flex-start; padding: 20px 50px; scroll-snap-align: start; scroll-snap-type: y proximity;">
-          <div class="header" style=" align-self: stretch; padding: 2vh 6vw; ">
+        <div id="homehero" class="animate" style="gap: 25px; flex-direction: column; height: 100vh; align-items: flex-start; padding: 20px 50px; scroll-snap-align: start; scroll-snap-type: y proximity;">
+          <div class="header" style=" align-self: stretch; padding: 2vh 6vw; transform: translateY(-100%); ">
             <svg width="59" height="34" viewBox="0 0 59 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.9661 34H1.00046C0.354514 34 -0.121964 33.3968 0.0276488 32.7684L2.05146 24.2684C2.15871 23.8179 2.5612 23.5 3.02426 23.5H10.4445C10.9076 23.5 11.3101 23.1821 11.4174 22.7316L13.5515 13.7684C13.6587 13.3179 14.0612 13 14.5243 13H19.4389C19.9045 13 20.3086 12.6786 20.4133 12.2249L23.0555 0.77514C23.1602 0.321409 23.5643 0 24.0299 0H32.4372C33.0929 0 33.5711 0.620406 33.4043 1.25449L31.5645 8.24551C31.3977 8.87959 31.8759 9.5 32.5316 9.5H36.502C37.1371 9.5 37.6114 10.0845 37.4805 10.706L35.9016 18.206C35.8041 18.6688 35.3959 19 34.923 19H23.5027C23.0496 19 22.6532 19.3046 22.5364 19.7423L18.9324 33.2577C18.8156 33.6954 18.4192 34 17.9661 34Z" fill="white" />
               <path d="M24.4888 20H35.9285C36.3989 20 36.8058 19.6721 36.9057 19.2124L38.9709 9.71243C39.1064 9.08913 38.6316 8.5 37.9937 8.5H34.071C33.4033 8.5 32.9232 7.85831 33.1116 7.21783L35.0234 0.717834C35.1485 0.292251 35.5391 0 35.9827 0H57.9719C58.6167 0 59.093 0.601333 58.9453 1.22904L51.4159 33.229C51.3096 33.6808 50.9065 34 50.4425 34H21.0602C20.3958 34 19.9162 33.3641 20.0987 32.7253L23.5273 20.7253C23.6499 20.296 24.0423 20 24.4888 20Z" fill="white" />
             </svg>
             <div class="navigation" style="gap: 20px; flex-direction: row; justify-content: flex-end; align-items: center; flex: 1 0 0;  padding: 0px ">
-              <span class="home" style="font-family: 'Microsoft Tai Le',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #ffffff; text-align: left; display: none" id="navHome">Home</span>
-              <span class="about" style="font-family: 'Microsoft Tai Le',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #ffffff; text-align: left" id="navAbout" onclick="loadabout()">About</span>
+              <span class="home" style="font-family: 'Microsoft Tai Le',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #ffffff; text-align: left; display: none" id="navHome" onclick="loadAbout()">Home</span>
+              <span class="about" style="font-family: 'Microsoft Tai Le',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #ffffff; text-align: left" id="navAbout" onclick="loadAbout()">About</span>
               <span class="portfolio" style="font-family: 'Microsoft Tai Le',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #ffffff; text-align: left">Portfolio</span>
               <span class="resume" style="font-family: 'Microsoft Tai Le',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #ffffff; text-align: left">Resume</span>
             </div>
           </div>
           <div class="heroDesc" style=" scroll-snap-align: start; gap: 25px; flex-direction: column; justify-content: center; align-items: flex-start; flex: 1 0 0; padding: 30px 11vw ; ">
-            <span class="helloImJulius" style="font-family: 'Microsoft YaHei UI',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 24px; font-weight: 700; color: #ffffff; text-align: left">Hello! I’m Julius.</span>
-            <span class="rich text" style="font-family: 'Microsoft YaHei UI',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #ffffff; text-align: left; width: 40vw">I’m a UI designer with a passion for creating digital experiences that not only look stunning but also resonate with users on a deeper level.</span>
-            <span class="rich text" style="font-family: 'Microsoft YaHei UI',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #ffffff; text-align: left; width: 40vw">Outside design, I am into photography, rugby & art.</span>
+            <span class="helloImJulius" style="font-family: 'Microsoft YaHei UI',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 24px; font-weight: 700; color: #ffffff; text-align: left">Hi! I'm Julius.</span>
+            <span class="rich-text" style="font-family: 'Microsoft YaHei UI',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #ffffff; text-align: left; width: 40vw">I’m a UI designer with a passion for creating digital experiences that not only look stunning but also resonate with users on a deeper level.</span>
+            <span class="rich-text" style="font-family: 'Microsoft YaHei UI',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #ffffff; text-align: left; width: 40vw">Outside design, I am into photography, rugby & art.</span>
             <div class="learnMore" style="gap: 10px; flex-direction: row; align-items: center; padding: 0px  ">
-              <span class="learnMoreAboutMe" style="font-family: 'Microsoft YaHei UI',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #657dff; text-align: left; text-decoration: underline">Learn more about me</span>
+              <span class="learnMoreAboutMe" style="font-family: 'Microsoft YaHei UI',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #657dff; text-align: left; text-decoration: underline" onclick="loadAbout()">Learn more about me</span>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@
             <div class="categoryPic" style="gap: 0; flex-direction: column; width: 100%; height: 35vh; justify-content: center; align-items: flex-start;  border-radius: 5px; padding: 10px 0px 10px 0px; background-color: #121212; "></div>
             <div class="categoryDesc" style="gap: 20px; flex-direction: column; justify-content: center; align-items: flex-start;  padding: 0px 20px 0px 20px; ">
               <span class="rich text" style="font-family: 'Microsoft YaHei UI',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 26px; font-weight: 700; color: #ffffff; text-align: left; width: 100%">🖌️ Crafting Experiences with Purpose</span>
-              <span class="rich text" style="font-family: 'Microsoft Tai Le',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #ffffff; text-align: left; width: 100%">With [X] years of experience in UI design, I've had the pleasure of working on diverse projects that span industries and platforms. Whether it's a sleek mobile app, an intuitive website, or an interactive prototype, I approach each project with a keen eye for detail and a commitment to delivering designs that not only meet but exceed expectations. </span>
+              <span class="rich text" style="font-family: 'Microsoft Tai Le',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; font-size: 18px; font-weight: 400; color: #ffffff; text-align: left; width: 100%">With 3 years of experience in UI design, I've had the pleasure of working on diverse projects that span industries and platforms. Whether it's a sleek mobile app, an intuitive website, or an interactive prototype, I approach each project with a keen eye for detail and a commitment to delivering designs that not only meet but exceed expectations. </span>
             </div>
           </div>
           <div class="categoryCard02" style="scroll-snap-align: start; scroll-margin-top: -35px; scroll-snap-type: y proximity; gap: 40px; flex-direction: column; justify-content: center; align-items: flex-start;  overflow: hidden; padding: 50px; ">
@@ -78,11 +78,3 @@
         </div>
       </div>   
 </main>
-<script>
-  // Adjust the scrolling speed by changing the values in the event listener
-  document.getElementById('homepage').addEventListener('wheel', function (event) {
-  // Multiply the deltaY value to control the scrolling speed
-  this.scrollTop += event.deltaY * 5;
-  event.preventDefault();
-  });
-</script>
