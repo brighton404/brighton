@@ -1,33 +1,45 @@
-//This serves as a dynamic link for filling content into the index page [brings in html content of different files and injects into the index.html] 
-//auto load the home page
+//This serves as a dynamic link for filling content into the index page
 let currentPage = sessionStorage.getItem('currentPage') || 'home';
 
 function loadHome() {
     const about = document.getElementById('about');
     const home = document.getElementById('home');
-    const theme1 = document.getElementById('theme1');
+    const profile = document.getElementById('profile');
 
-    theme1.style.display = 'none';
+    profile.style.display = 'none';
     about.style.display = 'none';
     home.style.display = 'block';
+
+    currentPage = 'profile';
+    sessionStorage.setItem('currentPage', currentPage);
+}
+
+function loadProfile() {
+    const about = document.getElementById('about');
+    const home = document.getElementById('home');
+    const profile = document.getElementById('profile');
+
+    profile.style.display = 'block';
+    about.style.display = 'none';
+    home.style.display = 'none';
     
-    fetch('/public/pages/html/home.html')
+    fetch('/public/pages/html/profile.html')
         .then(response => response.text())
         .then(data => {
-            home.innerHTML = data;
+            profile.innerHTML = data;
         })
         .catch(error => console.error('Error:', error));
 
-    currentPage = 'home';
+    currentPage = 'profile';
     sessionStorage.setItem('currentPage', currentPage);
 }
 
 function loadAbout() {
     const about = document.getElementById('about');
     const home = document.getElementById('home');
-    const theme1 = document.getElementById('theme1');
+    const profile = document.getElementById('profile');
 
-    theme1.style.display = 'none';
+    profile.style.display = 'none';
     about.style.display = 'block';
     home.style.display = 'none';
 
@@ -45,7 +57,11 @@ function loadAbout() {
 document.addEventListener('DOMContentLoaded', function () {
     if (currentPage === 'home') {
         loadHome();
+    } else if (currentPage === 'profile') {
+        loadProfile();
     } else if (currentPage === 'about') {
         loadAbout();
     }
 });
+
+feather.replace();
