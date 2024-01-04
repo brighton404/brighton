@@ -10,7 +10,7 @@ function loadHome() {
     about.style.display = 'none';
     home.style.display = 'block';
 
-    currentPage = 'profile';
+    currentPage = 'home';
     sessionStorage.setItem('currentPage', currentPage);
 }
 
