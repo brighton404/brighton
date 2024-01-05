@@ -1,0 +1,12 @@
+#about {    width: 100vw; }
+#about .aboutPage {    gap: 20px;    flex-direction: column;    padding: 0px;    background-color: #1e1f23; }
+#about .hero { height: 500px; padding: 20px 50px;flex-direction: column; align-items: flex-start; gap: 25px;align-self: stretch; background: lightgray; }
+#about .header {    align-self: stretch;    padding: 2vh 6vw;    background-color: rgba(30,31,35,0.2); }
+#about .heroDesc {  gap: 25px;    flex-direction: column;    justify-content: center;    align-items: flex-start;    flex: 1 0 0;    padding: 30px 11vw; }
+#about .heroDesc h1 {    font-family: 'Microsoft YaHei UI';    font-size: 24px;    font-weight: 700;    color: #000000;    text-align: left }
+#about .heroDesc .richtext, #about .heroDesc .mail {    font-family: 'Microsoft YaHei UI';    font-size: 16px;    font-weight: 400;    color: #000000;    text-align: left;    width: 40vw }
+#about .frame259 {    gap: 5px;    flex-direction: column;    justify-content: center;    align-items: flex-start;    padding: 0px 0px 0px 0px; }
+#about .container {    gap: 50px;    flex-direction: column;    align-items: center;    padding: 2vh 10vw; }
+#about .container .text {    font-family: 'Microsoft YaHei UI';    font-size: 26px;    font-weight: 700;    color: #ffffff;     text-align: left;    flex: 1 0 0;   min-width: 0 }
+#about .container .richtext {    color: #FFF;    font-family: 'Microsoft YaHei UI';    font-size: 18px;    font-style: normal;    font-weight: 400;    line-height: normal;    flex: 1 0 0; }
+#about .aboutCard01, #about .aboutCard02, #about .aboutCard03, #about .aboutCard04 {    padding: 50px 0px;    align-items: flex-start;    gap: 40px;    align-self: stretch; }
