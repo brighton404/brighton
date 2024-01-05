@@ -8,14 +8,8 @@ Welcome to my UI/UX Designer Portfolio! This website serves as a showcase of my 
 
 ## Navigation
 
-- **Home:** Get to know a bit about me and what I do.
-- **Environment:** Explore a curated selection of my best design projects.
-- **Contact:** Reach out to me for inquiries, collaborations, or just to say hello.
-
-## Environment
-
-In the **Environment** section, you'll find a diverse range of design projects, including web and mobile applications, user interfaces, wireframes, and user experience design. Each project is presented with detailed case studies, highlighting the objectives, challenges, and the creative solutions employed.
-
+- **Home:** Explore a curated selection of my best design projects.
+- **About:** Get to know a bit about me and what I do.
 
 ## Contact
 
