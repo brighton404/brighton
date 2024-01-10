@@ -5,9 +5,14 @@ function loadProfile() {
     const about = document.getElementById('about');
     const home = document.getElementById('home');
     const profile = document.getElementById('profile');
+    const navhome = document.getElementById('navhome');
+    const navabout = document.getElementById('navabout');
 
     profile.style.display = 'block';
     about.style.display = 'none';
+    navhome.classList.add ('active');
+    navhome.style.display = 'none';
+    navabout.style.display = 'block';
     
     fetch('/public/pages/html/profile.html')
         .then(response => response.text())
@@ -24,9 +29,14 @@ function loadAbout() {
     const about = document.getElementById('about');
     const home = document.getElementById('home');
     const profile = document.getElementById('profile');
+    const navabout = document.getElementById('navabout');
+    const navhome = document.getElementById('navhome');
 
     profile.style.display = 'none';
     about.style.display = 'block';
+    navabout.classList.add ('active');
+    navabout.style.display = 'none';
+    navhome.style.display = 'block';
 
     fetch('/public/pages/html/about.html')
         .then(response => response.text())

@@ -1,9 +1,12 @@
-.my-passion-in {
+.heading-h2 {
     align-self: stretch;
     position: relative;
+    font-size: var(--padding-7xl);
+    font-weight: 500;
   }
-  .in-the-dynamic {
+  .paragraph-span {
     margin: 0;
+    font-size: var(--font-size-base);
   }
   .in-the-dynamic-container {
     align-self: stretch;
@@ -33,7 +36,7 @@
     flex: 1;
     flex-shrink: 0;
     justify-content: flex-start;
-    padding: var(--padding-31xl) 18.75rem;
+    padding: var(--padding-31xl) 20vw;
     gap: 3.13rem;
   }
   .about-page {
@@ -51,8 +54,9 @@
   }
   @media screen and (max-width: 960px) {
     .context-container {
-      padding-left: var(--padding-81xl);
-      padding-right: var(--padding-81xl);
+      padding-left: var(--padding-51xl);
+      padding-right: var(--padding-51xl);
+      padding-top: var(--padding-81xl);
       box-sizing: border-box;
     }
   }

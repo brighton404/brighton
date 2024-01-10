@@ -6,10 +6,12 @@
     position: relative;
     display: inline-block;
     width: 60.56rem;
+    font-size: var(--font-size-base);
   }
   .learn-more1 {
     position: relative;
     text-decoration: underline;
+    font-size: var(--font-size-base);
   }
   .learn-more {
     display: flex;
@@ -60,9 +62,12 @@
     width: 1rem;
     height: 1rem;
   }
-  .linkedin {
+  #profile a {
+    font-size: var(--font-size-base);
+    text-decoration: none;
+  }
+  .social {
     position: relative;
-    text-decoration: underline;
     color: inherit;
     cursor: pointer;
   }
@@ -183,6 +188,7 @@
   }
   .category-card01, .category-card02, .category-card03, .category-card04, .category-card05 {
     width: 30vw;
+    min-width: 300px;
   }
   .category-desc1 {
     flex: 1;
