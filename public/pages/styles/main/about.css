@@ -1,13 +1,66 @@
-#about {    width: 100vw; }
-#about .aboutPage {    gap: 20px;    flex-direction: column;    padding: 0px;    background-color: #1e1f23; }
-#about .hero { height: 500px; padding: 20px 50px;flex-direction: column; align-items: flex-start; gap: 25px;align-self: stretch; background: lightgray; }
-#about .header {    align-self: stretch;    padding: 2vh 6vw;    background-color: rgba(30,31,35,0.2); }
-#about .heroDesc {  gap: 25px;    flex-direction: column;    justify-content: center;    align-items: flex-start;    flex: 1 0 0;    padding: 30px 11vw; }
-#about .heroDesc h1 {    font-family: 'Microsoft YaHei UI';    font-size: 24px;    font-weight: 700;    color: #000000;    text-align: left }
-#about .heroDesc .richtext, #about .heroDesc .mail {    font-family: 'Microsoft YaHei UI';    font-size: 16px;    font-weight: 400;    color: #000000;    text-align: left;    width: 40vw }
-#about .frame259 {    gap: 5px;    flex-direction: column;    justify-content: center;    align-items: flex-start;    padding: 0px 0px 0px 0px; }
-#about .container {    gap: 50px;    flex-direction: column;    align-items: center;    padding: 2vh 10vw; }
-#about .container .text {    font-family: 'Microsoft YaHei UI';    font-size: 26px;    font-weight: 700;    color: #ffffff;     text-align: left;    flex: 1 0 0;   min-width: 0 }
-#about .container .richtext {    color: #FFF;    font-family: 'Microsoft YaHei UI';    font-size: 18px;    font-style: normal;    font-weight: 400;    line-height: normal;    flex: 1 0 0; }
-#about .aboutCard01, #about .aboutCard02, #about .aboutCard03, #about .aboutCard04 {    padding: 50px 0px;    align-items: flex-start;    gap: 40px;    align-self: stretch; }
-@media(max-width: 490px) {   #about .header { background-color: transparent; padding: 2vh 2vw;}  #about .heroDesc { padding: 20px 0vw; }   #about .heroDesc .richtext, #about .heroDesc .mail {    font-family: 'Microsoft YaHei UI';    font-size: 16px;    font-weight: 400;    color: #000000;    text-align: left;    width: fit-content }   #about .aboutCard01, #about .aboutCard02, #about .aboutCard03, #about .aboutCard04 { flex-direction: column; } }
+.my-passion-in {
+    align-self: stretch;
+    position: relative;
+  }
+  .in-the-dynamic {
+    margin: 0;
+  }
+  .in-the-dynamic-container {
+    align-self: stretch;
+    position: relative;
+    font-size: var(--font-size-lg);
+  }
+  .about-card01 {
+    align-self: stretch;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-3xs) 0;
+    gap: var(--gap-3xs);
+  }
+  .about-page,
+  .context-container {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .context-container {
+    align-self: stretch;
+    flex: 1;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding: var(--padding-31xl) 18.75rem;
+    gap: 3.13rem;
+  }
+  .about-page {
+    position: relative;
+    border-radius: 6.67px;
+    background-color: var(--color-gray-200);
+    width: 100%;
+    height: 64rem;
+    justify-content: center;
+    min-height: 64rem;
+    text-align: left;
+    font-size: var(--font-size-7xl);
+    color: var(--color-white);
+    font-family: var(--font-microsoft-yahei-ui);
+  }
+  @media screen and (max-width: 960px) {
+    .context-container {
+      padding-left: var(--padding-81xl);
+      padding-right: var(--padding-81xl);
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .context-container {
+      height: auto;
+      padding: var(--padding-81xl) var(--padding-xl);
+      box-sizing: border-box;
+    }
+  }
+  

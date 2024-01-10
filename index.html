@@ -9,12 +9,16 @@
     <meta property="og:title" content="Your UI/UX Designer Portfolio">
     <meta property="og:description" content="Showcasing my creative UI/UX design work">
     <meta property="og:url" content="https://brightons.site">
-    <link rel="stylesheet" href="public/pages/styles/main/index.css" type="text/css">
     <link rel="stylesheet" href="public/pages/styles/main/profile.css" type="text/css">
+    <link rel="stylesheet" href="public/pages/styles/main/index.css" type="text/css">
     <link rel="stylesheet" href="public/pages/styles/main/path.css" type="text/css">
     <link rel="stylesheet" href="public/pages/styles/main/home.css" type="text/css">
     <link rel="stylesheet" href="public/pages/styles/main/about.css">
-    <link href="https://fonts.cdnfonts.com/css/microsoft-yahei" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Microsoft YaHei UI:wght@400;700&display=swap"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Microsoft YaHei:wght@400&display=swap"/>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="public/pages/scripts/main/home.js"></script>
     <script src="public/pages/scripts/main/path.js"></script>
@@ -29,11 +33,12 @@
   gtag('config', 'G-JJ826X3K8C');
 </script>
 <body>
-    <section id="home">
-    <div class="wrap"><div class="julius"><div class="console1">Hey, this is Julius.</div>
-        <div class="console2"><span>Julius is a UI & UX designer based in malindi, kenya.</span></div>
-        <div class="console3"><div id="more" onclick="loadProfile();">Learn More</div></div>
-        </div><div class="socials"></div></div>
+    <section id="sesame">
+        <div class="container">
+            <div class="navbutton" id="navhome" onclick="loadProfile()">home</div>
+            <div class="navbutton" id="navabout" onclick="loadAbout()">about</div>
+            <div class="navbutton" id="navportfolio">Figma</div>
+        </div>
     </section>
     <section id="profile"></section>
     <section id="about"></section>

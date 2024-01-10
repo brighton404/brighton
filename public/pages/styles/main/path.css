@@ -1,1 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap'); head {display: none;} script {display: none;} * { display: flex; margin: 0px; padding: 0px; gap: 0px; font-family: 'Inter', sans-serif; font-weight: 300; max-width: 100vw; } :root { /*Global color scheme*/    --theme-body-primary: #1A1D21;--theme-body-secondary:#f0f0f0;    --theme-text-primary: #FFF;--theme-text-secondary: #000;    --theme-text-third: #383E47;--theme-text-fourth: #989898;    --theme-divs-primary: #383E47;--theme-divs-secondary: #1A1D21; } body { background-color: var(--theme-body-primary); display: flex; overflow: hidden; height: 100vh; scroll-behavior: smooth; } #home { scroll-snap-type: y proximity; width: 100vw; height: 100vh; } #profile { overflow-y: scroll; scroll-snap-type: y proximity; background: #1E1F23; width: 100vw; height: 100vh; } #about { overflow-y: scroll; scroll-snap-type: y proximity; background: #1E1F23; } #theme1 h1, #theme1 p, #theme1 a { mix-blend-mode: difference; font-family: Inter; } ::-webkit-scrollbar { width: 10px; } ::-webkit-scrollbar-track { background: #ffffff00;} ::-webkit-scrollbar-thumb { background: #888; border-radius: 1px; } ::-webkit-scrollbar-thumb:hover { background: #555;}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap'); head {display: none;} script {display: none;} * { display: flex; margin: 0px; padding: 0px; gap: 0px;  font-weight: 300; max-width: 100vw; } 
+    
+:root {
+      /* fonts */
+      --font-microsoft-yahei-ui: "Microsoft YaHei UI";
+      --font-ibm-plex-mono: "IBM Plex Mono";
+      --font-microsoft-yahei: "Microsoft YaHei";
+    
+      /* font sizes */
+      --font-size-lg: 1.13rem;
+      --font-size-7xl: 1.63rem;
+      --font-size-base: 1rem;
+      --font-size-3xl: 1.38rem;
+      --font-size-sm: 0.88rem;
+    
+      /* Colors */
+      --color-gray-100: #242529;
+      --color-gray-200: #1e1f23;
+      --color-gray-300: rgba(255, 255, 255, 0.2);
+      --color-gray-400: rgba(0, 0, 0, 0.2);
+      --color-white: #fff;
+      --color-black: #000;
+      --color-royalblue: #657dff;
+    
+      /* Gaps */
+      --gap-3xs: 0.63rem;
+      --gap-6xl: 1.56rem;
+      --gap-xl: 1.25rem;
+      --gap-mini: 0.94rem;
+    
+      /* Paddings */
+      --padding-31xl: 3.13rem;
+      --padding-81xl: 6.25rem;
+      --padding-xl: 1.25rem;
+      --padding-3xs: 0.63rem;
+      --padding-8xs: 0.31rem;
+      --padding-11xl: 1.88rem;
+    
+      /* Border radiuses */
+      --br-6xs-7: 6.7px;
+      --br-8xs: 5px;
+    } 
+    body { background-color: var(--theme-body-primary); display: flex; overflow: hidden; height: 100vh; scroll-behavior: smooth; } 
+    #home { width: 100vw; height: 100vh; } 
+    #profile { overflow-y: hidden; background: #1E1F23; width: 100vw; height: 100vh; } 
+    #about { background: #1E1F23; } 
+    ::-webkit-scrollbar { width: 10px; } ::-webkit-scrollbar-track { background: #ffffff00;} ::-webkit-scrollbar-thumb { background: #888; border-radius: 1px; }
+    ::-webkit-scrollbar-thumb:hover { background: #555;}
