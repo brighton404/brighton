@@ -386,8 +386,8 @@
     .category-card01, .category-card02, .category-card03, .category-card04, .category-card05 {
       align-self: stretch;
       width: auto;
-      height: 22.81rem;
-      min-height: max-content;
+      height: max-content;
+      min-height: 22.81rem;
     }
     .category-desc1,
     .category-desc2,
