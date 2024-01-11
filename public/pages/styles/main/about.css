@@ -63,7 +63,7 @@
   @media screen and (max-width: 520px) {
     .context-container {
       height: auto;
-      padding: var(--padding-81xl) var(--padding-xl) 10vh;
+      padding: var(--padding-81xl) var(--padding-xl) 20vh;
       box-sizing: border-box;
     }
   }
