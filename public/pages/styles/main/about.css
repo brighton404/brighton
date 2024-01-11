@@ -60,7 +60,7 @@
       box-sizing: border-box;
     }
   }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 520px) {
     .context-container {
       height: auto;
       padding: var(--padding-81xl) var(--padding-xl);

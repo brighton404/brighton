@@ -33,7 +33,7 @@
 #sesame .container .active {
     background: var(--color-gray-200);
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 520px) {
     #sesame .container {
         flex-direction: row;
     }
