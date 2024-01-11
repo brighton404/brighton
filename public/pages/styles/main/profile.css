@@ -168,7 +168,7 @@
   .category-desc {
     flex: 1;
     justify-content: flex-end;
-    background-image: url(../../../images/categorydesc@3x.png);
+    background-image: url(../../../images/categorydesc1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -195,7 +195,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: var(--padding-xl);
-    background-image: url(../../../images/categorydesc1@3x.png);
+    background-image: url(../../../images/categorydesc2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -218,7 +218,7 @@
   .category-desc2 {
     flex: 1;
     padding: var(--padding-xl);
-    background-image: url(../../../images/categorydesc2@3x.png);
+    background-image: url(../../../images/categorydesc3.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -241,7 +241,7 @@
   .category-desc3 {
     flex: 1;
     justify-content: flex-end;
-    background-image: url(../../../images/categorydesc3@3x.png);
+    background-image: url(../../../images/categorydesc4.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -270,7 +270,7 @@
     flex: 1;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url(../../../images/categorydesc4@3x.png);
+    background-image: url(../../../images/categorydesc5.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
