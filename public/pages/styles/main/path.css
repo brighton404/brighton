@@ -43,7 +43,7 @@
     } 
     body { background-color: var(--theme-body-primary); display: flex; overflow: hidden; height: 100vh; scroll-behavior: smooth; } 
     #home { width: 100vw; height: 100vh; } 
-    #profile { overflow-y: scroll; background: #1E1F23; width: 100vw; height: 100vh; } 
+    #profile { overflow-y: hidden; background: #1E1F23; width: 100vw; height: 100vh; } 
     #about { background: #1E1F23; } 
     ::-webkit-scrollbar { width: 10px; } ::-webkit-scrollbar-track { background: #ffffff00;} ::-webkit-scrollbar-thumb { background: #888; border-radius: 1px; }
     ::-webkit-scrollbar-thumb:hover { background: #555;}
