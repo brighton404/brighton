@@ -1,29 +1,25 @@
-# brighton404.github.io
+## Portfolio Website
 
-Hello there
+This website serves as a showcase of who i am, my design work and skills. Whether you're a potential employer, collaborator, or just an enthusiast, I hope you find inspiration and insight into my creative process here. 
 
-# UI/UX Designer Portfolio Website
+### Navigation
 
-Welcome to my UI/UX Designer Portfolio! This website serves as a showcase of my design work and skills. Whether you're a potential employer, collaborator, or just an enthusiast, I hope you find inspiration and insight into my creative process here. 
+**Home:** Explore a curated selection of my best design projects.
+**About:** Get to know a bit about me and what I do.
+**Figma** `yet to be integrated`
 
-## Navigation
 
-- **Home:** Explore a curated selection of my best design projects.
-- **About:** Get to know a bit about me and what I do.
+### Technologies Used
 
-## Contact
+This website was created using a combination of modern web technologies, ensuring a smooth and engaging user experience. <br/>
+The technologies include HTML5, CSS3 and JavaScript. The website is optimized for various devices and screen sizes.
 
-You can reach me through the links on the website.
+### Feedback
 
-## Technologies Used
+I'd love to hear your thoughts about my work or this website. <br/>
+Your feedback and suggestions are highly valuable to me, and I'm always looking for ways to improve and grow as a designer.
 
-This website was created using a combination of modern web technologies, ensuring a smooth and engaging user experience. The technologies include HTML5, CSS3 and JavaScript. The website is optimized for various devices and screen sizes, so you can explore my portfolio on your desktop, tablet, or smartphone.
-
-## Feedback
-
-I'd love to hear your thoughts about my work or this website. Your feedback and suggestions are highly valuable to me, and I'm always looking for ways to improve and grow as a designer.
-
-Thank you for visiting, and I hope you enjoy your journey through my portfolio!
+Thank you for visiting.
 
 Sincerely,
 [Julius Brighton]
