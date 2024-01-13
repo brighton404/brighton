@@ -4,8 +4,8 @@ This website serves as a showcase of who i am, my design work and skills. Whethe
 
 ### Navigation
 
-**Home:** Explore a curated selection of my best design projects.
-**About:** Get to know a bit about me and what I do.
+**Home:** Explore a curated selection of my best design projects.<br/>
+**About:** Get to know a bit about me and what I do.<br/>
 **Figma** `yet to be integrated`
 
 
@@ -21,5 +21,6 @@ Your feedback and suggestions are highly valuable to me, and I'm always looking 
 
 Thank you for visiting.
 
-Sincerely,
+[Julius Brighton]:https://brightons.site
+Sincerely,<br/>
 [Julius Brighton]
