@@ -1,4 +1,4 @@
-## Portfolio Website
+## Portfolio Webpage
 
 This website serves as a showcase of who i am, my design work and skills. Whether you're a potential employer, collaborator, or just an enthusiast, I hope you find inspiration and insight into my creative process here. 
 
