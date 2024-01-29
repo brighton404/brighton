@@ -5,15 +5,9 @@
     font-weight: 500;
   }
   .paragraph-span {
-    margin: 0;
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-3xl);
   }
-  .in-the-dynamic-container {
-    align-self: stretch;
-    position: relative;
-    font-size: var(--font-size-lg);
-  }
-  .about-card01 {
+  .about-card {
     align-self: stretch;
     overflow: hidden;
     flex-shrink: 0;
@@ -50,7 +44,7 @@
     text-align: left;
     font-size: var(--font-size-7xl);
     color: var(--color-white);
-    font-family: var(--font-microsoft-yahei-ui);
+    font-family: var(--font-ibm-plex-mono);
   }
   @media screen and (max-width: 960px) {
     .context-container {

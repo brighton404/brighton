@@ -68,41 +68,6 @@ function toggleTruncation(element) {
     });
   }
 
-
-    const brightonlunahealthcoText = document.getElementById(
-      "brightonlunahealthcoText"
-    );
-    if (brightonlunahealthcoText) {
-      brightonlunahealthcoText.addEventListener("click", function () {
-        window.location.href =
-          "mailto:brighton@lunahealth.co?subject=brighton@lunahealth.co";
-      });
-    }
-    
-    var linkedInText = document.getElementById("linkedInText");
-    if (linkedInText) {
-      linkedInText.addEventListener("click", function () {
-        window.open("https://www.linkedin.com/in/julius-brighton/");
-      });
-    }
-    
-    var veroText = document.getElementById("veroText");
-    if (veroText) {
-      veroText.addEventListener("click", function () {
-        window.open("https://vero.co/jomviking");
-      });
-    }
-    
-    var behanceText = document.getElementById("behanceText");
-    if (behanceText) {
-      behanceText.addEventListener("click", function () {
-        window.open("https://www.behance.net/juliusbrighton");
-      });
-    }
-    
-    var readcvText = document.getElementById("readcvText");
-    if (readcvText) {
-      readcvText.addEventListener("click", function () {
-        window.open("https://read.cv/brightonjulius");
-      });
-    }
+document.getElementById('Figma').addEventListener('click', function() {
+  window.location.href = 'https://www.figma.com/@brighton404'; 
+});
