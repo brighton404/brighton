@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1, h2, h3, summary {font-weight: bold;}
+
+input[type='checkbox'] {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 20px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+}
+  
+input[type='checkbox']:checked {
+  background-color: #333;
+}
+
+input[type='checkbox']:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transition: transform 0.2s;
+}
+
+input[type='checkbox']:checked:after {
+  transform: translateX(20px);
+}
+br {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 2px;
+  line-height: 2px;
+}
+
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+  display: none;
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+  border-radius: 0px;
+  background: #101010;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+  background: #eaeaea;
+  border-radius: 0px;
+  border: 4px solid #101010;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  display: none;
+  background: gray
+}
+
+/* Create a polka dot pattern */
+.polka-dots {
+  background-image: radial-gradient(circle, rgb(222, 222, 222) 15%, transparent 10%); /* Create two dots */
+  background-size: 15px 15px; /* Specify the pattern's size */
+  background-position: 0 0, 10px 10px; /* Place the two gradients */
+}
+
+.default-team {
+  transition: color 1s ease-in-out;
+}
+
+.wide-team {
+  transition: color 1s ease-in-out;
+}

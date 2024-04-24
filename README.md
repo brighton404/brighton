@@ -1,26 +1,30 @@
-## Portfolio Webpage
+# React + TypeScript + Vite
 
-This website serves as a showcase of who i am, my design work and skills. Whether you're a potential employer, collaborator, or just an enthusiast, I hope you find inspiration and insight into my creative process here. 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### Navigation
+Currently, two official plugins are available:
 
-**Home:** Explore a curated selection of my best design projects.<br/>
-**About:** Get to know a bit about me and what I do.<br/>
-**Figma** `yet to be integrated`
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Expanding the ESLint configuration
 
-### Technologies Used
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-This website was created using a combination of modern web technologies, ensuring a smooth and engaging user experience. <br/>
-The technologies include HTML5, CSS3 and JavaScript. The website is optimized for various devices and screen sizes.
+- Configure the top-level `parserOptions` property like this:
 
-### Feedback
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
 
-I'd love to hear your thoughts about my work or this website. <br/>
-Your feedback and suggestions are highly valuable to me, and I'm always looking for ways to improve and grow as a designer.
-
-Thank you for visiting.
-
-[Julius Brighton]:https://brightons.site
-Sincerely,<br/>
-[Julius Brighton]
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
