@@ -1,8 +1,0 @@
-.heading-h2 { align-self: stretch; position: relative; font-size: var(--padding-7xl);    font-weight: 500; }
-.paragraph-span { font-size: var(--font-size-base); }
-.about-card { align-self: stretch;  overflow: hidden; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; padding: var(--padding-3xs) 0; gap: var(--gap-3xs); }
-.about-page, .context-container { overflow-y: auto; display: flex; flex-direction: column; align-items: center; }
-.context-container { align-self: stretch; flex: 1;  flex-shrink: 0; justify-content: flex-start; padding: var(--padding-31xl) 20vw; gap: 3.13rem; }
-.about-page { position: relative;  border-radius: 6.67px; background-color: var(--color-gray-200); width: 100%; height: 64rem; justify-content: center; min-height: 64rem; text-align: left;  font-size: var(--font-size-7xl);  color: var(--color-white);  font-family: var(--font-ibm-plex-mono); }
-@media screen and (max-width: 960px) { .context-container { padding-left: var(--padding-51xl); padding-right: var(--padding-51xl); padding-top: var(--padding-81xl); box-sizing: border-box; } }
-@media screen and (max-width: 520px) { .context-container { height: auto; padding: var(--padding-81xl) var(--padding-xl) 20vh; box-sizing: border-box;} }  
