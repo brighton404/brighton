@@ -1,9 +1,60 @@
-// src/pages/BlogPage.tsx
 import { useParams, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { getPostById } from '@/utils/blogUtils';
 import ReactMarkdown from 'react-markdown';
+import type { Components } from 'react-markdown';
+import type { ReactNode } from 'react';
 import Header from '@/components/header';
+
+// Custom components for ReactMarkdown
+const MarkdownComponents: Partial<Components> = {
+  p: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+    <p className="mb-4 leading-relaxed" {...props}>{children}</p>
+  ),
+  h1: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+    <h1 className="text-3xl font-bold mt-8 mb-4" {...props}>{children}</h1>
+  ),
+  h2: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+    <h2 className="text-2xl font-bold mt-6 mb-3" {...props}>{children}</h2>
+  ),
+  h3: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+    <h3 className="text-xl font-bold mt-4 mb-2" {...props}>{children}</h3>
+  ),
+  ul: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+    <ul className="list-disc pl-6 mb-4 space-y-2" {...props}>{children}</ul>
+  ),
+  ol: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+    <ol className="list-decimal pl-6 mb-4 space-y-2" {...props}>{children}</ol>
+  ),
+  code: ({ node, inline, className, children, ...props }: {
+    node?: any;
+    inline?: boolean;
+    className?: string;
+    children: ReactNode;
+    [key: string]: any;
+  }) => {
+    return (
+      <code
+        className={`${className ?? ''} ${
+          inline 
+            ? 'bg-gray-100 rounded px-1 py-0.5' 
+            : 'block bg-gray-100 p-4 rounded-lg overflow-x-auto'
+        }`}
+        {...props}
+      >
+        {children}
+      </code>
+    );
+  },
+  blockquote: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+    <blockquote 
+      className="border-l-4 border-gray-200 pl-4 italic my-4" 
+      {...props}
+    >
+      {children}
+    </blockquote>
+  ),
+};
 
 export function BlogPage() {
   const { id } = useParams<{ id: string }>();
@@ -61,8 +112,13 @@ export function BlogPage() {
             <span className="mx-2">•</span>
             <span>{post.author}</span>
           </div>
-          <div className="prose max-w-none">
-            <ReactMarkdown>{post.content}</ReactMarkdown>
+          <div className="prose prose-lg max-w-none">
+            <ReactMarkdown 
+              components={MarkdownComponents}
+              className="markdown-content"
+            >
+              {post.content}
+            </ReactMarkdown>
           </div>
         </article>
       </main>
