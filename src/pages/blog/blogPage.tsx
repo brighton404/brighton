@@ -1,6 +1,5 @@
 // src/pages/BlogPage.tsx
-import React from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { getPostById } from '@/utils/blogUtils';
 import ReactMarkdown from 'react-markdown';
@@ -8,7 +7,6 @@ import Header from '@/components/header';
 
 export function BlogPage() {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
   
   const { data: post, isLoading, error } = useQuery({
     queryKey: ['blog-post', id],
