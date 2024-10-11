@@ -1,14 +1,12 @@
 import Icons from "@/components/icons";
-import { useState } from "react";
+import { useCardContext } from '@/pages/home/cardContext';
 
 const ProfileCard = () => {
-    const [expanded, setExpanded] = useState(false);
-
-    const toggleCard = () => setExpanded(!expanded);
+    const { expanded, toggleCard } = useCardContext();
 
     return (
         <div className={`transition-all duration-300 ease-in-out ${expanded ? 'px-[25vw] sm:px-[10vw] py-4 w-full h-fit items-left flex-col pb-[5vh]' : 'mt-8 p-4 w-max gap-4 h-min flex-row'} bg-background shadow-md rounded-lg flex sm:flex-col`}>
-            <img src="src/assets/pictures/admin.png" alt="a picture of julius brighton" onClick={toggleCard} className={`transition-all duration-300 ease-in-out cursor-pointer rounded-lg object-cover bg-1000 dark:bg-dark ${expanded ? 'w-[150px] h-[150px] md:w-[100px] md:h-[100px]' : 'w-[350px] h-full sm:w-full sm:h-[250px]'}`} />
+            {/*<img src="src/assets/pictures/admin.png" alt="a picture of julius brighton" onClick={toggleCard} className={`transition-all duration-300 ease-in-out cursor-pointer rounded-lg object-cover bg-1000 dark:bg-dark ${expanded ? 'w-[150px] h-[150px] md:w-[100px] md:h-[100px]' : 'w-[350px] h-full sm:w-full sm:h-[250px]'}`} />*/}
             <div className={`transition-all duration-300 ease-in-out flex flex-col items-start justify-start ${expanded ? 'w-full h-max gap-8' : 'w-min h-full gap-2'} `}>
                 <div className={`transition-all duration-300 ease-in-out flex flex-col p-2 ${expanded ? 'hidden' : 'gap-2'}`}>
                     <div className="transition-all duration-300 ease-in-out py-4 flex flex-row items-center justify-start"><Icons variant="quotations"/></div>
@@ -16,7 +14,7 @@ const ProfileCard = () => {
                     <div className="transition-all duration-300 ease-in-out flex flex-row items-center justify-start cursor-pointer" ><a className="text-blue-700 text-nowrap underline" onClick={toggleCard}>Learn more</a></div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out self-stretch flex flex-col items-start justify-center gap-8 mt-10 ${expanded ? '' : 'hidden'}`}>
-                    <h2 className="text-xl">Professional biography</h2>
+                    <h2 className="text-xl hover:text-red-500 cursor-pointer" onClick={toggleCard}>Professional biography</h2>
                     <div className="self-stretch flex flex-col items-start justify-start gap-2">
                     <div className="self-stretch flex flex-col gap-2">
                         <h3 className="text-lg">Background</h3>
