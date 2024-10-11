@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+## Portfolio Webpage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project showcases my portfolio, design work and skills. Whether you're a potential employer, collaborator, or just an enthusiast, I hope you find inspiration and insight into my creative process here. 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies Used
 
-## Expanding the ESLint configuration
+This was created using a combination of modern web technologies, ensuring a smooth and engaging user experience. <br/>
+The technologies include Vite with typescript and bun as Package manager.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Feedback
 
-- Configure the top-level `parserOptions` property like this:
+I'd love to hear your thoughts about my work or this website. <br/>
+Your feedback and suggestions are highly valuable to me, and I'm always looking for ways to improve and grow as a designer.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Thank you for visiting.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[Julius Brighton]:https://brightons.site
+Sincerely,<br/>
+[Julius Brighton]
