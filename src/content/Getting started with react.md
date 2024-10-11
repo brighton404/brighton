@@ -1,7 +1,7 @@
 ---
 title: Getting Started with React: A Beginner's Guide
 date: 2024-10-10
-author: John Doe
+author: Julius Brighton
 categories: [1, 3]
 ---
 
