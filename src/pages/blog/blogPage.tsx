@@ -94,7 +94,7 @@ export function BlogPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <main className="max-w-3xl mx-auto py-8 px-4">
+      <main className="max-w-3xl mx-auto py-8 px-4 sm:pt-20">
         <Link 
           to="/blog" 
           className="inline-flex items-center text-blue-500 hover:underline mb-6"

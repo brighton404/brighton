@@ -1,5 +1,5 @@
 import Header from "@/components/header";
-import ProfileCard from "./cardtest";
+import ProfileCard from "./card";
 
 const Homepage = () => (
     <>

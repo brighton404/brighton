@@ -67,7 +67,7 @@ const Blog: React.FC = () => {
           </div>
         </div>
       </nav>
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 sm:pt-16">
         <div className="max-w-3xl mx-auto mb-8">
           <div className="flex gap-4 mb-4">
             <input
