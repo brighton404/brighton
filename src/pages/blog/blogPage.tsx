@@ -2,55 +2,54 @@ import { useParams, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { getPostById } from '@/utils/blogUtils';
 import ReactMarkdown from 'react-markdown';
-import type { Components } from 'react-markdown';
 import type { ReactNode } from 'react';
 import Header from '@/components/header';
 
+// Define the types for custom components
+type MarkdownComponentProps = {
+  children: ReactNode;
+  [key: string]: any;
+};
+
 // Custom components for ReactMarkdown
-const MarkdownComponents: Partial<Components> = {
-  p: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+const MarkdownComponents = {
+  p: ({ children, ...props }: MarkdownComponentProps) => (
     <p className="mb-4 leading-relaxed" {...props}>{children}</p>
   ),
-  h1: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+  h1: ({ children, ...props }: MarkdownComponentProps) => (
     <h1 className="text-3xl font-bold mt-8 mb-4" {...props}>{children}</h1>
   ),
-  h2: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+  h2: ({ children, ...props }: MarkdownComponentProps) => (
     <h2 className="text-2xl font-bold mt-6 mb-3" {...props}>{children}</h2>
   ),
-  h3: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+  h3: ({ children, ...props }: MarkdownComponentProps) => (
     <h3 className="text-xl font-bold mt-4 mb-2" {...props}>{children}</h3>
   ),
-  ul: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+  ul: ({ children, ...props }: MarkdownComponentProps) => (
     <ul className="list-disc pl-6 mb-4 space-y-2" {...props}>{children}</ul>
   ),
-  ol: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
+  ol: ({ children, ...props }: MarkdownComponentProps) => (
     <ol className="list-decimal pl-6 mb-4 space-y-2" {...props}>{children}</ol>
   ),
-  code: ({ node, inline, className, children, ...props }: {
-    node?: any;
+  code: ({ inline, className, children, ...props }: {
     inline?: boolean;
     className?: string;
     children: ReactNode;
     [key: string]: any;
-  }) => {
-    return (
-      <code
-        className={`${className ?? ''} ${
-          inline 
-            ? 'bg-gray-100 rounded px-1 py-0.5' 
-            : 'block bg-gray-100 p-4 rounded-lg overflow-x-auto'
-        }`}
-        {...props}
-      >
-        {children}
-      </code>
-    );
-  },
-  blockquote: ({ children, ...props }: { children: ReactNode, [key: string]: any }) => (
-    <blockquote 
-      className="border-l-4 border-gray-200 pl-4 italic my-4" 
+  }) => (
+    <code
+      className={`${className ?? ''} ${
+        inline
+          ? 'bg-gray-100 rounded px-1 py-0.5'
+          : 'block bg-100 p-4 rounded-lg overflow-x-auto'
+      }`}
       {...props}
     >
+      {children}
+    </code>
+  ),
+  blockquote: ({ children, ...props }: MarkdownComponentProps) => (
+    <blockquote className="border-l-4 border-gray-200 pl-4 italic my-4" {...props}>
       {children}
     </blockquote>
   ),
@@ -114,7 +113,7 @@ export function BlogPage() {
           </div>
           <div className="prose prose-lg max-w-none">
             <ReactMarkdown 
-              components={MarkdownComponents}
+              components={MarkdownComponents}  // Corrected to use 'components'
               className="markdown-content"
             >
               {post.content}
