@@ -17,11 +17,6 @@ categories: [1, 3]
 This header is read first as packets that make the markdown file a blog, that means any file within the directory that is a markdown file but does not contain this header it won't be identified as a blog file.
 
 
-### Technologies Used
-
-This was created using a combination of modern web technologies, ensuring a smooth and engaging user experience. <br/>
-The technologies include Vite with typescript and bun as Package manager.
-
 ### Feedback
 
 I'd love to hear your thoughts about my work or this website. <br/>
